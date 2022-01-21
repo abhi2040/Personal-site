@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body {
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 16px;
+        }
+
+        .social-logo {
+            width: 40px;
+            height: 40px;
+            padding-top: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        form {
+            text-align: center;
+            width: 702px;
+            background-color: white;
+            margin-left: 12px;
+            border: whitesmoke 1px solid;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #heading {
+            font-size: 40px;
+            font-weight: bold;
+            background-color: white;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #social-icons {
+            padding: 24px;
+            background-color: #f2f6ff
+        }
+
+        .input-box {
+            padding-bottom: 12px;
+            /* padding-top: 12px; */
+            margin-bottom: 36px;
+            border: 0;
+            border-bottom: solid 1px #ccc;
+            font-size: 18px;
+            width: 100%;
+            outline: none;
+        }
+
+        .input-section {
+            padding-top: 60px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        #btn-submit {
+            background-color: #0056ff;
+            font-size: 21px;
+            border: none;
+            padding-left: 21px;
+            padding-right: 21px;
+            margin: 12px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .input-box:focus{
+            background-color: lightblue;
+        }
+        .input-box:focus:required {
+        background-color: orange;    
+        }
+        #btn-submit:hover {
+            background-color: green;
+         }
+    </style>
+</head>
+
+<body>
+    <form action="mailto:abhishekmaurya2040@gmail.com" method="post" enctype="text/plain">
+        <h1 id="heading">Contact Me</h1>
+        <div id="social-icons">
+            <a href="https://www.google.com/" target="_blank"> <img class="social-logo"
+                    src="google-logo-png-open-2000.png" alt="www.google.com"></a>
+            <a href="https://www.facebook.com/profile.php?id=100047766693622" target="_blank"><img class="social-logo" src="673525.png"
+                    alt="www.facebook.com"></a>
+            <a href="https://www.linkedin.com/in/abhishek-maurya-87b845192/" target="_blank"><img class="social-logo" src="673521.png"
+                    alt="www.linkedin.com"></a>
+            <a href="https://www.github.com/" target="blank"> <img class="social-logo" src="25231.svg"
+                    alt="www.github.com"></a>
+        </div>
+
+        <div class="input-section">
+            <div>
+                <input class="input-box" type="text" name="name" placeholder="Name">
+            </div>
+            <div>
+                <input class="input-box" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div>
+                <input class="input-box" type="tel" name="contact" placeholder="Contact N.o" >
+            </div>
+            <div>
+                <textarea class="input-box" name="message" type="text"cols="10" rows="3" placeholder="Hello, I am interested in..."></textarea>
+            </div>
+            <input id="btn-submit" type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
